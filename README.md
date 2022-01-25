@@ -1,5 +1,17 @@
 # Dotfiles
 
+## Create bash profile
+>cat .profile
+``` shell
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+export HOMEBREW_CACHE=~/Library/Caches/Homebrew
+export PATH="/usr/local/bin:$PATH"
+if [ -f ~/.config/bashrc ]; then . ~/.config/bashrc; fi
+```
+
 ## Base16 Shell
 ### Installation
 
