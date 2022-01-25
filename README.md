@@ -1,4 +1,4 @@
-# dotfiles
+# Dotfiles
 
 ## Base16 Shell
 ### Installation
