@@ -21,13 +21,13 @@ HIST_STAMPS="mm/dd/yyyy"
 source $OSH/oh-my-bash.sh
 
 #bash aliases
-if [ -f ~/.config/bash_aliases ]; then
-		. ~/.config/bash_aliases
+if [ -f ~/.config/bash_aliases.sh ]; then
+		. ~/.config/bash_aliases.sh
 fi
 
 #bash functions
-if [ -f ~/.config/bash_functions ]; then
-		. ~/.config/bash_functions
+if [ -f ~/.config/bash_functions.sh ]; then
+		. ~/.config/bash_functions.sh
 fi
 
 # brew install bash-completion
