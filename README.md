@@ -35,32 +35,32 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/mast
 ```
 
 ## Brew packages 
-`ack: Search tool like grep, but optimized for programmers
-awk: Text processing scripting language
-awscli: Official Amazon AWS command-line interface
-bash: Bourne-Again SHell, a UNIX command interpreter
-bash-completion: Programmable completion for Bash 3.2
-bat: Clone of cat(1) with syntax highlighting and Git integration
-coreutils: GNU File, Shell, and Text utilities
-curl: Get a file from an HTTP, HTTPS or FTP server
-fish: User-friendly command-line shell for UNIX-like operating systems
-gcc: GNU compiler collection
-git: Distributed revision control system
-gnu-sed: GNU implementation of the famous stream editor
-groovy: Java-based scripting language
-jq: Lightweight and flexible command-line JSON processor
-mysql-client: Open source relational database management system
-ncdu: NCurses Disk Usage
-ranger: File browser
-rlwrap: Readline wrapper: adds readline support to tools that lack it
-sshpass: [no description]
-the_silver_searcher: Code-search similar to ack
-tig: Text interface for Git repositories
-tldr: Simplified and community-driven man pages
-tmux-xpanes: Ultimate terminal divider powered by tmux
-tree: Display directories as trees (with optional color/HTML output)
-vim: Vi 'workalike' with many additional features
-wget: Internet file retriever`
+- ack: Search tool like grep, but optimized for programmers
+- awk: Text processing scripting language
+- awscli: Official Amazon AWS command-line interface
+- bash: Bourne-Again SHell, a UNIX command interpreter
+- bash-completion: Programmable completion for Bash 3.2
+- bat: Clone of cat(1) with syntax highlighting and Git integration
+- coreutils: GNU File, Shell, and Text utilities
+- curl: Get a file from an HTTP, HTTPS or FTP server
+- fish: User-friendly command-line shell for UNIX-like operating systems
+- gcc: GNU compiler collection
+- git: Distributed revision control system
+- gnu-sed: GNU implementation of the famous stream editor
+- groovy: Java-based scripting language
+- jq: Lightweight and flexible command-line JSON processor
+- mysql-client: Open source relational database management system
+- ncdu: NCurses Disk Usage
+- ranger: File browser
+- rlwrap: Readline wrapper: adds readline support to tools that lack it
+- sshpass: [no description]
+- the_silver_searcher: Code-search similar to ack
+- tig: Text interface for Git repositories
+- tldr: Simplified and community-driven man pages
+- tmux-xpanes: Ultimate terminal divider powered by tmux
+- tree: Display directories as trees (with optional color/HTML output)
+- vim: Vi 'workalike' with many additional features
+- wget: Internet file retriever
 ### Installation
 ```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
