@@ -1,4 +1,4 @@
 Host *
 UseKeychain yes
-User rjyotishi
+User ****
 StrictHostKeyChecking no
