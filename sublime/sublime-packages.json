@@ -1,0 +1,31 @@
+{
+		"bootstrapped": true,
+		"in_process_packages":
+		[
+		],
+		"installed_packages":
+		[
+				"A File Icon",
+				"Anaconda",
+				"Ansible",
+				"BracketHighlighter",
+				"Djaneiro",
+				"Dockerfile Syntax Highlighting",
+				"Generic Config",
+				"GitGutter",
+				"Markdown Extended",
+				"OpenVPN",
+				"Package Control",
+				"Pretty JSON",
+				"Pretty YAML",
+				"ProjectManager",
+				"requirementstxt",
+				"SideBarEnhancements",
+				"SublimeLinter",
+				"Tabnine",
+				"Terminal",
+				"Terraform",
+				"Theme - Gravity",
+		],
+}
+

@@ -1,0 +1,85 @@
+CURRENT_USER=$(whoami)
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH:/Users/$CURRENT_USER/bin"
+export PROMPT_COMMAND="echo -n [$(date +%k:%m:%S)]"
+export OSH=~/.oh-my-bash
+OSH_THEME="bakke"
+
+completions=(
+  git
+  composer
+  ssh
+)
+
+plugins=(
+  git
+  bashmarks
+)
+
+HIST_STAMPS="mm/dd/yyyy"
+
+
+source $OSH/oh-my-bash.sh
+
+#bash aliases
+if [ -f ~/.config/bash_aliases ]; then
+		. ~/.config/bash_aliases
+fi
+
+#bash functions
+if [ -f ~/.config/bash_functions ]; then
+		. ~/.config/bash_functions
+fi
+
+# brew install bash-completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+		. $(brew --prefix)/etc/bash_completion
+fi
+
+# maintain bash history across all sessions
+export HISTSIZE=5000000
+export HISTFILESIZE=5000000
+export HISTCONTROL="ignoreboth:erasedups"
+shopt -s histappend
+PROMPT_COMMAND="history -a"
+
+# fix annoying locale warning when ssh to remote ubuntu servers
+export LC_ALL=""
+export LC_CTYPE="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+
+# Colorised man pages
+man() {
+	env \
+		LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+		LESS_TERMCAP_md=$(printf "\e[1;31m") \
+		LESS_TERMCAP_me=$(printf "\e[0m") \
+		LESS_TERMCAP_se=$(printf "\e[0m") \
+		LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+		LESS_TERMCAP_ue=$(printf "\e[0m") \
+		LESS_TERMCAP_us=$(printf "\e[1;32m") \
+		man "$@"
+}
+
+if [ -f ~/.config/git-completion.bash ]; then
+		. ~/.config/git-completion.bash
+fi
+
+
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+		[ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+		eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+## git branch in prompt string
+#if [ -f ~/.config/git-prompt.sh ]; then
+#		source ~/.config/git-prompt.sh
+#		GIT_PS1_SHOWDIRTYSTATE=true
+#		GIT_PS1_SHOWSTASHSTATE=true
+#		GIT_PS1_SHOWUPSTREAM=verbose
+#		GIT_PS1_SHOWUNTRACKEDFILES=1
+#		PS1='\[[\033[01;34m\]\w\[\033[00m\]]\[\033[01;33m\]$(__git_ps1 " (%s)")\[\033[01;32m\] \n>\[$(tput sgr0)\]\[\033[00m\] '
+#fi
+
+
+
+PS1='\[[\033[01;34m\]\w\[\033[00m\]]\[\033[01;33m\] \n>\[$(tput sgr0)\]\[\033[00m\]  '

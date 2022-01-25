@@ -1,0 +1,64 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+		"font_size": 18,
+		// "font_face": "CaskaydiaCove Nerd Font",
+		"font_face": "Furacode Nerd Font",
+		// "font_face": "Comic Shanns",
+		"word_wrap": "true",
+		"tab_size": 2,
+		"translate_tabs_to_spaces": true,
+		"word_separators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?",
+		"line_numbers": true,
+		"ignored_packages":[
+				"Vintage",
+		],
+		"auto_complete": true,
+
+		"file_exclude_patterns":[
+				".svn",
+				".git",
+				".env",
+				".DS_Store",
+				".git*",
+				"*.lock",
+				"lib",
+				"db.php",
+				"object-cache.php",
+				"advanced-cache.php",],
+
+				"folder_exclude_patterns":[
+						".svn",
+						".git",
+						".githooks",
+						"bin",
+						"config",
+						"wp",
+						"vendor",
+						"lib",
+						"scripts",
+						"node_modules",
+						"uploads",
+						"media",
+						"languages",
+						"upgrade",],
+
+						"bold_folder_labels": true,
+						"caret_extra_width": 2,
+						"indent_guide_options":
+						[
+								"draw_normal",
+								"draw_active"
+						],
+						"line_padding_bottom": 2,
+						"line_padding_top": 2,
+
+						//Gravity theme
+						"theme": "Gravity One.sublime-theme",
+						"gravity_title_bar": true,
+						"gravity_tab_height_short": true,
+						"gravity_highlight_color_blue": true,
+						"gravity_selected_tab_bold": true,
+						"gravity_sidebar_header": false,
+						"color_scheme": "One Dark Gravity.sublime-color-scheme",
+}

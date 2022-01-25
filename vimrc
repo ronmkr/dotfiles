@@ -1,0 +1,100 @@
+set nocompatible              " be iMproved, required
+set shortmess=I " Read :help shortmess for everything else.
+set shell=/bin/bash
+set ruler
+set noerrorbells
+set smartindent
+
+filetype off                  " required
+
+"++++++++++++++++++VUNDLE+++++++++++++++++++++
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" Plugins
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'chriskempson/base16-vim'
+Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-speeddating'
+Plugin 'scrooloose/syntastic'
+Plugin 'preservim/nerdtree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'kien/ctrlp.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'rking/ag.vim'
+Plugin 'yggdroot/indentline'
+Plugin 'kana/vim-repeat'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'tpope/vim-sensible'
+Plugin 'dzeban/vim-log-syntax'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'ryanoasis/vim-devicons'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+"++++++++++++++++++++++++++++++++++++++++++++++
+
+"==============Plugin Settings=================
+
+"syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+"Base16
+let base16colorspace=256  " Access colors present in 256 colorspace
+
+
+"ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+"indent_guides
+"let g:indent_guides_enable_on_vim_startup = 1
+
+"INDENTLINE
+let g:indentLine_color_term = 239
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
+"silver searcher
+let g:ag_working_path_mode="r"
+
+"vim-better-whitespace
+let g:better_whitespace_guicolor='red'
+let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=1
+let g:strip_max_file_size = 200
+
+"dev-icons
+set encoding=UTF-8
+
+
+"-------------------------------------------------
+
+" Vim Basic
+set ruler
+set cmdheight=1
+set foldcolumn=1
+set background=dark
+set tabstop=4                   " a tab is four spaces
+set softtabstop=4               " when hitting <BS>, pretend like a tab is removed, even if spaces
+set number relativenumber                      " always show line numbers
+set showmatch                   " set show matching parenthesis
+set hlsearch                    " highlight search terms
+set incsearch                   " show search matches as you type
+set gdefault                    " search/replace "globally" (on a line) by default
+set listchars=tab:▸\ ,trail:·,extends:#,nbsp:·
+
+" Toggle show/hide invisible chars
+nnoremap <leader>I :set list!<cr>
+
+" Toggle line numbers
+nnoremap <leader>N :setlocal number!<cr>
+
