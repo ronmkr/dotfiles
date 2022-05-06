@@ -46,7 +46,7 @@ To install from command line: `vim +PluginInstall +qall`
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 ```
 
-## Brew packages 
+## Brew packages
 - ack: Search tool like grep, but optimized for programmers
 - awk: Text processing scripting language
 - awscli: Official Amazon AWS command-line interface
