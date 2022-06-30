@@ -4,14 +4,12 @@
 [user]
         email =
         name =
-
-
 [color]
         ui = true
 [http]
         postBuffer = 500M
         maxRequestBuffer = 100M
-#        sslCAinfo = /etc/ssl/certs/ca-certificates.crt
-sslverify = false
+        # sslCAinfo = /etc/ssl/certs/ca-certificates.crt
+        sslverify = false
 [alias]
         lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

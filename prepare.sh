@@ -12,12 +12,16 @@ vim +PluginInstall +qall
 
 # Copy git  config
 cp git/gitconfig ~/.gitconfig
-cp git-completion.bash ~/.git-completion.bash
-cp git-prompt.sh ~/.git-prompt.sh
+cp git/git-completion.bash ~/.git-completion.bash
+cp git/git-prompt.sh ~/.git-prompt.sh
 
 # Copy bashrc 
-cp bash/profile ~/.profile
-cp -r bash ~/.config
+cp bash/profile ~/.bash_profile
+cp bash/bash_aliases.sh ~/.config
+cp bash/bash_functions.sh ~/.config
+cp bash/bashrc ~/.config
+cp bash/osx ~/.config
+
 
 cp ssh/config ~/.ssh/config
 
