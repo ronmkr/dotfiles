@@ -16,18 +16,20 @@ function calc() {
     printf "\n";
 }
 
-# # Create a new directory and enter it
-# function mkd() {
-#     mkdir -p "$@" && cd "$_";
-# }
+# Function to create a directory and move into it
+mkd() {
+    # Create the directory
+    mkdir -p "$@"
+    # Move into the directory
+    cd "$_";
+}
 
 
-# Base64 encode
+# This function encodes a string to base64
 function base64-encode() {
     echo -n "$@" | base64;
 }
-
-# Base64 decode
+ # This function decodes a base64 string
 function base64-decode() {
     echo -n "$@" | base64 -D;
 }
@@ -164,6 +166,6 @@ function json() {
 # the `.git` directory, listing directories first. The output gets piped into
 # `less` with options to preserve color and line numbers, unless the output is
 # small enough for one screen.
-function tree() {
-    tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
-}
+# function tree() {
+#     tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
+# }

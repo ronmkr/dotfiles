@@ -20,7 +20,7 @@ HIST_STAMPS="mm/dd/yyyy"
 
 source $OSH/oh-my-bash.sh
 
-#bash aliases
+# Check if the bash_aliases.sh and bash_functions.sh files exist in the ~/.config directory
 if [ -f ~/.config/bash_aliases.sh ]; then
 		. ~/.config/bash_aliases.sh
 fi
@@ -81,5 +81,5 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 #fi
 
 
-
+#This line of code sets the PS1 (prompt string) in Bash, which is used to display a prompt before the user enters a command. The prompt displays the current working directory in blue text and a new line with a '> ' after it. The prompt is reset to its uncolored state after each segment.
 PS1='\[[\033[01;34m\]\w\[\033[00m\]]\[\033[01;33m\] \n>\[$(tput sgr0)\]\[\033[00m\]  '

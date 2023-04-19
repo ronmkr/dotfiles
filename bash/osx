@@ -10,8 +10,7 @@
 #   --no-restart: Don't restart any apps or services after running the script.
 #
 # @see: http://secrets.blacktree.com/?showapp=com.apple.finder
-#
-# @author Jeff Geerling, 2014
+
 
 # Warn that some commands will not be run if the script is not run as root.
 if [[ $EUID -ne 0 ]]; then
