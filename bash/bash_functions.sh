@@ -22,16 +22,16 @@ function calc() {
 # }
 
 
-# Base64 encode 
+# Base64 encode
 function base64-encode() {
-   echo -n "$@" | base64;
+    echo -n "$@" | base64;
 }
 
-# Base64 decode 
+# Base64 decode
 function base64-decode() {
     echo -n "$@" | base64 -D;
 }
-         
+
 
 # Change working directory to the top-most Finder window location
 # function cdf() { # short for `cdfinder`
