@@ -1,8 +1,13 @@
+# Brew taps
+
 tap "gromgit/fuse"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+
+# Brew
+
 brew "ack"
 brew "autoconf"
 brew "automake"
@@ -37,6 +42,8 @@ brew "tldr"
 brew "tmux-xpanes"
 brew "vim"
 brew "wget"
+
+# Cask
 cask "android-platform-tools"
 cask "appcleaner"
 cask "imageoptim"
@@ -58,6 +65,8 @@ cask "rectangle"
 cask "topnotch"
 cask "visual-studio-code"
 cask "vox"
+
+# App Store##
 mas "1Password for Safari", id: 1569813296
 mas "AdGuard for Safari", id: 1440147259
 mas "Amphetamine", id: 937984704
