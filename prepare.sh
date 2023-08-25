@@ -1,4 +1,4 @@
-mkdir -p ~/.config
+mkdir -p ~/.config/alacritty/
 mkdir -p ~/.ssh
 
 #install basic plugins
@@ -15,14 +15,15 @@ cp git/gitconfig ~/.gitconfig
 cp git/git-completion.bash ~/.git-completion.bash
 cp git/git-prompt.sh ~/.git-prompt.sh
 
-# Copy bashrc 
+# Copy bashrc
 cp bash/profile ~/.bash_profile
 cp bash/bash_aliases.sh ~/.config
 cp bash/bash_functions.sh ~/.config
 cp bash/bashrc ~/.config
 cp bash/osx ~/.config
 
-
 cp ssh/config ~/.ssh/config
 
 cp tmux/tmux.conf ~/.tmux.conf
+
+cp alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml

@@ -17,7 +17,6 @@ plugins=(
 
 HIST_STAMPS="mm/dd/yyyy"
 
-
 source $OSH/oh-my-bash.sh
 
 # Check if the bash_aliases.sh and bash_functions.sh files exist in the ~/.config directory

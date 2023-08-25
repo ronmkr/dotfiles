@@ -3,7 +3,6 @@
 # Copyright (C) 2006,2007 Shawn O. Pearce <spearce@spearce.org>
 # Conceptually based on gitcompletion (http://gitweb.hawaga.org.uk/).
 # Distributed under the GNU General Public License, version 2.0.
-#
 # The contained completion routines provide support for completing:
 #
 #    *) local and remote branch names

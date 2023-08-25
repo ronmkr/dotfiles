@@ -62,6 +62,7 @@ defaults write com.apple.screencapture type -string "png"
 #   sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 # fi
 
+
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################

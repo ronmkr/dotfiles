@@ -1,4 +1,5 @@
 # Simple calculator
+
 function calc() {
     local result="";
     result="$(printf "scale=10;$*\n" | bc --mathlib | tr -d '\\\n')";

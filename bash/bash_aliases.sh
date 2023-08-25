@@ -5,6 +5,7 @@ else # OS X `ls`
     colorflag="-G"
 fi
 
+
 # List all files colorized in long format
 alias ll="ls -lF ${colorflag}"
 
